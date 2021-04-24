@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>music</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./styles/play.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header>
+				<h1>100+ music new</h1>
+				<p>all the best</p>
+				<nav>
+					<ul class="left">
+						<li><a href="#">resentry</a></li>
+						<li><a href="#">top</a></li>
+						<li><a href="#">best</a></li>
+						<li><a href="#">music</a></li>
+						
+					</ul>
+					<ul class="right">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">poet</a></li>
+						<li><a href="#">logout</a></li>
+						<li class="autoplay_btn"><a href="#">
+							<label>
+								<h5>AUTOPLAY</h5>
+								<input type="checkbox">
+								<span></span>
+							</label>
+						</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+			<div class="body_content">
+				<div class="title">
+					<span></span>
+					<span>TITLE</span>
+					<span>ARTIST</span>
+					<span>GENRE</span>
+					<span>DURATION</span>
+					<span></span>
+					<span></span>
+					
+				</div>
+				<div class="list">
+
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<span class="play_btn"><img class="" src="images/play.png"></span>
+
+
+
+
+
+	<script type="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="data.js"></script>
+
+	<script >
+		
+
+		$(document).ready(function(){
+
+			var list = $(".list");
+			var list_block;
+
+			for (var key in song_list) {
+				list_block=$('<div class="list_block"></div>');
+				list.append(list_block);
+
+				list_block.append('')
+			}
+			
+		});
+	</script>
+
+
+
+
+
+</body>
+</html>
